@@ -1,0 +1,238 @@
+
+h2 {
+    font-size: 30px;
+    color: rgb(119, 198, 110);
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #333;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.input-group input {
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: #333;
+    padding: 0 10px;
+    background: transparent;
+    border: 1px solid #333;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: 0;
+    
+    font-size: 12px;
+    background: none;
+}
+
+.admin_check  {
+    margin: -10px 0 12px;
+}
+
+.admin_check label {
+    color: #333;
+    font-size: 14px;
+}
+
+.admin_check label input {
+    accent-color:rgb(119, 198, 110);
+}
+
+
+.btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: rgb(119, 198, 110);
+    box-shadow: 0 5px 10px  rgb(119, 198, 110);
+    font-size: 16px;
+    color: whitesmoke;
+    font-size: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.sign-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.sign-link p a {
+    color: rgb(119, 198, 110);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sign-link p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Booking punya CSS */
+
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.user-greeting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #ff4444;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #ff6b6b, #ff8e8e);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.promo-banner {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.promo-text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Search Form */
+.search-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+#ticket-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 40px;
+}
+
+/* Contact Us Section */
+.contact-us {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-us a {
+  color: #ff4444;
+  text-decoration: none;
+}
