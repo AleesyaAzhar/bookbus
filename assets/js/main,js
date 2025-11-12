@@ -1,0 +1,19 @@
+$(document).ready(function() {
+    // Show bus results on form submit
+    $("#searchForm").submit(function(e) {
+        e.preventDefault();
+        $("#busResults").show();
+        // Scroll to results
+        $("html, body").animate({
+            scrollTop: $("#busResults").offset().top
+        }, 500);
+    });
+
+    // Swap "From" and "To" fields
+    $("button.btn-secondary").click(function() {
+        const fromVal = $("input[placeholder='Enter source']").val();
+        const toVal = $("input[placeholder='Enter destination']").val();
+        $("input[placeholder='Enter source']").val(toVal);
+        $("input[placeholder='Enter destination']").val(fromVal);
+    });
+});
