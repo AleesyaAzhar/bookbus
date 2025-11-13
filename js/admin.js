@@ -4,6 +4,24 @@ $(document).ready(function() {
         $("#sidebar").toggleClass("show");
     });
 
+    // Handle dropdown clicks for Add Booking and View Bookings
+    $(".dropdown-item").click(function(e) {
+        e.preventDefault();
+        const section = $(this).data("section");
+        $(".dropdown-item").removeClass("active");
+        $(this).addClass("active");
+
+        // Hide all sections
+        $("#dashboardSection, #addBookingSection, #viewBookingsSection").hide();
+
+        // Show the selected section
+        if (section === "addBooking") {
+            $("#addBookingSection").show();
+        } else if (section === "viewBookings") {
+            $("#viewBookingsSection").show();
+        }
+    });
+
     // Tickets Bought Chart
     const ticketsCtx = document.getElementById('ticketsChart').getContext('2d');
     const ticketsChart = new Chart(ticketsCtx, {
@@ -45,5 +63,11 @@ $(document).ready(function() {
                 borderWidth: 1
             }]
         }
+    });
+
+    // Handle Add Booking form submission
+    $("#addBookingForm").submit(function(e) {
+        e.preventDefault();
+        alert("Bus details added successfully!");
     });
 });
