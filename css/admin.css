@@ -1,4 +1,10 @@
 /* TEMPORARY JE NANTI STANDARDIZE DKT STYLE.CSS JE */
+:root {
+    --main-color: #2F4156;
+    --secondary-color: whitesmoke;
+    --text-color: #FFFFFF;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -6,7 +12,7 @@
     left: 0;
     z-index: 100;
     padding: 48px 0 0;
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset -1px 0 0 #2F4156;
 }
 
 .sidebar .nav-link {
@@ -35,6 +41,72 @@
 [role="main"] {
     padding-top: 48px;
 }
+
+/* Summary Cards */
+.card.floating-card {
+    background-color: var(--secondary-color); /* Light background */
+    color: var(--main-color); /* Dark text */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Transition all properties */
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.card.floating-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: var(--main-color); /* Swap to dark background */
+    color: var(--secondary-color); /* Swap to light text */
+}
+
+.card.floating-card .card-body {
+    padding: 20px;
+}
+
+.card.floating-card .card-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--main-color); /* Dark text */
+}
+
+.card.floating-card:hover .card-title {
+    color: var(--secondary-color); /* Light text on hover */
+}
+
+.card.floating-card .card-text.fs-3 {
+    font-size: 1.75rem !important;
+    font-weight: 600;
+    color: var(--main-color); /* Dark text */
+}
+
+.card.floating-card:hover .card-text.fs-3 {
+    color: var(--secondary-color); /* Light text on hover */
+}
+
+/* Card Title Wrapper */
+.card-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between title and icon */
+    margin-bottom: 10px;
+}
+
+/* Icon Styling */
+.card-title-wrapper i {
+    font-size: 1.2rem;
+    color: var(--main-color); /* Match the title color */
+    margin-top: -9px;
+}
+
+/* Hover Effect for Icon */
+.card.floating-card:hover .card-title-wrapper i {
+    color: var(--secondary-color); /* Reverse color on hover */
+}
+
+
 
 @media (max-width: 767.98px) {
     .sidebar {

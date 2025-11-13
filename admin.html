@@ -14,6 +14,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/admin.css">
+    <!-- Boxicons Icons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <div class="container-fluid">
@@ -52,32 +55,46 @@
                 </div>
 
                 <!-- Summary Cards -->
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card text-white bg-primary">
-                            <div class="card-body">
-                                <h5 class="card-title">Tickets Bought</h5>
-                                <p class="card-text fs-3">1,250</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card text-white bg-success">
-                            <div class="card-body">
-                                <h5 class="card-title">Seats Left</h5>
-                                <p class="card-text fs-3">450</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card text-white bg-warning">
-                            <div class="card-body">
-                                <h5 class="card-title">Total Buses</h5>
-                                <p class="card-text fs-3">45</p>
-                            </div>
-                        </div>
-                    </div>
+<div class="row">
+    <!-- Tickets Bought Card -->
+    <div class="col-md-4 mb-4">
+        <div class="card floating-card">
+            <div class="card-body">
+                <div class="card-title-wrapper">
+                    <h5 class="card-title">Tickets Bought</h5>
+                    <i class='bx bxs-carousel'></i>
                 </div>
+                <p class="card-text fs-3">1,250</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seats Left Card -->
+    <div class="col-md-4 mb-4">
+        <div class="card floating-card">
+            <div class="card-body">
+                <div class="card-title-wrapper">
+                    <h5 class="card-title">Seats Left</h5>
+                    <i class='bx bxs-user-check'></i>
+                </div>
+                <p class="card-text fs-3">450</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Total Buses Card -->
+    <div class="col-md-4 mb-4">
+        <div class="card floating-card">
+            <div class="card-body">
+                <div class="card-title-wrapper">
+                    <h5 class="card-title">Total Buses</h5>
+                    <i class='bx bx-bus' ></i>
+                </div>
+                <p class="card-text fs-3">45</p>
+            </div>
+        </div>
+    </div>
+</div>
 
                 <!-- Graphs -->
                 <div class="row">
