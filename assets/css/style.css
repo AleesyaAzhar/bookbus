@@ -122,6 +122,7 @@ body {
     padding-top: 70px;
 }
 
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -375,4 +376,8 @@ body {
     border-top: 1px solid var(--secondary-color);
     font-size: 14px;
     color: var(--text-color);
+}
+
+#busResults, #myTicketsSection {
+    transition: all 0.3s ease;
 }
